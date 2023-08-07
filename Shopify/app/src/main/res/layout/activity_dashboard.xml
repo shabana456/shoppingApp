@@ -27,14 +27,14 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:gravity="center" >
-                <ImageView
-                    android:id="@+id/imgbtnDemo2"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/shirt" >
-                </ImageView>
+        <ImageView
+            android:id="@+id/imgbtnDemo2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shirt" >
+        </ImageView>
     </FrameLayout>
 
     <FrameLayout
@@ -43,14 +43,14 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:gravity="center" >
-            <ImageView
-                android:id="@+id/imgbtnDemo1"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/clutch" >
-            </ImageView>
+        <ImageView
+            android:id="@+id/imgbtnDemo1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/clutch" >
+        </ImageView>
         <Button
             android:id="@+id/btnPayment"
             android:layout_width="121dp"
