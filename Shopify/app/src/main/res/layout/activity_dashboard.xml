@@ -1,66 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mainContainer"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:padding="5dp" >
+    android:padding="5dp">
+
+    <Button
+        android:id="@+id/frament1btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Men's Wear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <Button
+        android:id="@+id/frament2btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Women's Wear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/frament1btn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <Button
+        android:id="@+id/frament3btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kid's Wear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/frament2btn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
 
     <FrameLayout
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:gravity="center" >
+        android:id="@+id/frameLayout"
+        android:layout_width="313dp"
+        android:layout_height="452dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frament3btn"
+        app:layout_constraintVertical_bias="0.13" />
 
-        <ImageView
-            android:id="@+id/imgProfilePicture"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/sale" />
-    </FrameLayout>
 
-    <FrameLayout
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:gravity="center" >
-        <ImageView
-            android:id="@+id/imgbtnDemo2"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/shirt" >
-        </ImageView>
-    </FrameLayout>
-
-    <FrameLayout
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:gravity="center" >
-        <ImageView
-            android:id="@+id/imgbtnDemo1"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/clutch" >
-        </ImageView>
-        <Button
-            android:id="@+id/btnPayment"
-            android:layout_width="121dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="#8000ff"
-            android:minHeight="30dp"
-            android:text="Buy"
-            android:textColor="#FFFFFF"
-            android:textSize="12sp"
-            android:textStyle="normal|bold" />
-    </FrameLayout>
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
